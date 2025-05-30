@@ -31,11 +31,20 @@ img {
   height: auto;
 }
 
-/* ✅ Navigation */
+/* ✅ Navigation styles */
+nav {
+  display: flex;
+  flex-wrap: wrap;        /* Allows wrapping if needed */
+  justify-content: flex-end;
+  gap: 1rem;               /* Space between links */
+}
+
 nav a {
-  margin-left: 1rem;
+  white-space: nowrap;    /* Prevents link text from wrapping */
+  padding: 0.5rem 1rem;
   color: #ccc;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
