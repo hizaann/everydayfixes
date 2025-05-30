@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EverydayFixes</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico.PNG" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EverydayFixes.io</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <img src="logo.PNG" alt="EverydayFixes logo" style="height: 60px;">
+
   <header>
-    <h1>EverydayFixes</h1>
+    <img src="logo.png" alt="EverydayFixes Logo" style="height: 40px;" />
     <nav>
       <a href="#">Home</a>
       <a href="#">Submit a Problem</a>
       <a href="#">Browse Fixes</a>
       <a href="#">Profile</a>
     </nav>
+    <button id="theme-toggle">Toggle Dark Mode</button>
   </header>
+
   <main>
     <section>
-      <h2>Welcome to EverydayFixes</h2>
-      <p>Share your daily problems and find smart solutions.</p>
+      <h1>Welcome to EverydayFixes.io</h1>
+      <p>Share and discover solutions to everyday problems.</p>
     </section>
   </main>
+
   <footer>
-    <p>© 2025 EverydayFixes</p>
+    &copy; 2025 EverydayFixes.io
   </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
 </body>
 </html>
